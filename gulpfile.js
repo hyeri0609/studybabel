@@ -37,3 +37,8 @@ gulp.task("bb", function () {
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("js"));
 });
+
+gulp.task('watch', function() {
+    gulp.watch('src/**/*.js', ['bb'])
+});
+
