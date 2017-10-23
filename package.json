@@ -1,0 +1,27 @@
+{
+  "name": "studyhexi",
+  "version": "1.0.0",
+  "description": "studyhexi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://hyeri0609@hyeri0609.visualstudio.com:22/_git/studyhexi"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-hyeriserver": "0.0.1-alpha",
+    "gulp-sourcemaps": "^2.6.1",
+    "mocha": "^4.0.1",
+    "morgan": "^1.9.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
