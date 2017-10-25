@@ -32,7 +32,14 @@ var concat = require("gulp-concat");
 gulp.task("bb", function () {
   return gulp.src("src/**/*.js")
     .pipe(sourcemaps.init())
-    .pipe(babel())
+    .pipe(babel({
+      "babelrc": false,
+      "comments": false,
+      "minified": true,
+      "presets": [
+        ["es2015"]
+      ]
+    }))
     .pipe(concat("app.js"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("js"));
